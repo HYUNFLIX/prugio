@@ -1,0 +1,145 @@
+---
+---
+<header id="ep-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300" style="background: transparent;">
+  <div class="header-inner flex items-center justify-between px-6 md:px-10 h-16 md:h-20">
+    <!-- Logo -->
+    <a href="/" class="flex-shrink-0 flex flex-col leading-tight">
+      <span class="text-white/60 text-xs tracking-widest uppercase font-light">PRUGIO</span>
+      <span class="text-white font-bold text-base md:text-lg tracking-wide">동래 푸르지오 에듀포레</span>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden lg:flex items-center gap-1 ml-8">
+      <!-- 사업안내 -->
+      <div class="nav-item relative group">
+        <a href="#business" class="nav-link flex items-center px-4 py-2 text-white/90 text-sm font-medium tracking-wide hover:text-white transition-colors whitespace-nowrap">
+          사업안내
+        </a>
+        <div class="nav-dropdown absolute top-full left-0 w-40 bg-[#112d22] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-xl">
+          <a href="#business-overview" class="block px-5 py-3 text-white/80 text-sm hover:text-white hover:bg-[#1b493c] transition-colors">사업개요</a>
+          <a href="#location" class="block px-5 py-3 text-white/80 text-sm hover:text-white hover:bg-[#1b493c] transition-colors">입지환경</a>
+          <a href="#premium" class="block px-5 py-3 text-white/80 text-sm hover:text-white hover:bg-[#1b493c] transition-colors">프리미엄</a>
+        </div>
+      </div>
+
+      <!-- 단지정보 -->
+      <div class="nav-item relative group">
+        <a href="#complex" class="nav-link flex items-center px-4 py-2 text-white/90 text-sm font-medium tracking-wide hover:text-white transition-colors whitespace-nowrap">
+          단지정보
+        </a>
+        <div class="nav-dropdown absolute top-full left-0 w-40 bg-[#112d22] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-xl">
+          <a href="#complex-design" class="block px-5 py-3 text-white/80 text-sm hover:text-white hover:bg-[#1b493c] transition-colors">단지설계</a>
+          <a href="#landscape-design" class="block px-5 py-3 text-white/80 text-sm hover:text-white hover:bg-[#1b493c] transition-colors">조경설계</a>
+          <a href="#complex-layout" class="block px-5 py-3 text-white/80 text-sm hover:text-white hover:bg-[#1b493c] transition-colors">단지배치도</a>
+          <a href="#unit-layout" class="block px-5 py-3 text-white/80 text-sm hover:text-white hover:bg-[#1b493c] transition-colors">동호배치도</a>
+        </div>
+      </div>
+
+      <!-- 그리너리라운지 -->
+      <div class="nav-item relative group">
+        <a href="#greenery" class="nav-link flex items-center px-4 py-2 text-white/90 text-sm font-medium tracking-wide hover:text-white transition-colors whitespace-nowrap">
+          그리너리라운지
+        </a>
+      </div>
+
+      <!-- 항공VR -->
+      <div class="nav-item relative group">
+        <a href="#vr" class="nav-link flex items-center px-4 py-2 text-white/90 text-sm font-medium tracking-wide hover:text-white transition-colors whitespace-nowrap">
+          항공VR
+        </a>
+        <div class="nav-dropdown absolute top-full left-0 w-36 bg-[#112d22] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-xl">
+          <a href="#vr-top" class="block px-5 py-3 text-white/80 text-sm hover:text-white hover:bg-[#1b493c] transition-colors">조감뷰</a>
+          <a href="#vr-center" class="block px-5 py-3 text-white/80 text-sm hover:text-white hover:bg-[#1b493c] transition-colors">단지중앙</a>
+        </div>
+      </div>
+
+      <!-- 평면정보 -->
+      <div class="nav-item relative group">
+        <a href="#floorplan" class="nav-link flex items-center px-4 py-2 text-white/90 text-sm font-medium tracking-wide hover:text-white transition-colors whitespace-nowrap">
+          평면정보
+        </a>
+        <div class="nav-dropdown absolute top-full left-0 w-44 bg-[#112d22] opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 shadow-xl">
+          <a href="#floorplan-guide" class="block px-5 py-3 text-white/80 text-sm hover:text-white hover:bg-[#1b493c] transition-colors">평면안내</a>
+          <a href="#model-house" class="block px-5 py-3 text-white/80 text-sm hover:text-white hover:bg-[#1b493c] transition-colors">E모델하우스</a>
+          <a href="#interior" class="block px-5 py-3 text-white/80 text-sm hover:text-white hover:bg-[#1b493c] transition-colors">인테리어</a>
+          <a href="#system" class="block px-5 py-3 text-white/80 text-sm hover:text-white hover:bg-[#1b493c] transition-colors">시스템</a>
+        </div>
+      </div>
+
+      <!-- 관심고객등록 -->
+      <div class="nav-item relative group">
+        <a href="#contact" class="nav-link flex items-center px-4 py-2 text-white/90 text-sm font-medium tracking-wide hover:text-white transition-colors whitespace-nowrap">
+          관심고객등록
+        </a>
+      </div>
+    </nav>
+
+    <!-- Right Buttons -->
+    <div class="flex items-center gap-3 ml-auto lg:ml-6">
+      <!-- 선착순 상태 버튼 -->
+      <a href="#contact" class="hidden md:flex items-center px-4 py-2 border border-white/50 rounded-full text-white/90 text-xs font-medium tracking-wide hover:border-white hover:text-white transition-all whitespace-nowrap">
+        선착순 동·호 지정계약중
+      </a>
+      <!-- 전화번호 -->
+      <a href="tel:16665326" id="header-tel" class="flex items-center gap-2 px-5 py-2 rounded text-white text-sm font-bold tracking-wide transition-all whitespace-nowrap" style="background:#1b493c;">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+        </svg>
+        1666-5326
+      </a>
+      <!-- 모바일 햄버거 -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2 text-white" aria-label="메뉴">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="lg:hidden hidden" style="background:#13362d;">
+    <nav class="flex flex-col py-4">
+      <a href="#business" class="px-6 py-3 text-white/90 text-sm font-medium border-b border-white/10 hover:bg-[#1b493c] transition-colors">사업안내</a>
+      <a href="#complex" class="px-6 py-3 text-white/90 text-sm font-medium border-b border-white/10 hover:bg-[#1b493c] transition-colors">단지정보</a>
+      <a href="#greenery" class="px-6 py-3 text-white/90 text-sm font-medium border-b border-white/10 hover:bg-[#1b493c] transition-colors">그리너리라운지</a>
+      <a href="#vr" class="px-6 py-3 text-white/90 text-sm font-medium border-b border-white/10 hover:bg-[#1b493c] transition-colors">항공VR</a>
+      <a href="#floorplan" class="px-6 py-3 text-white/90 text-sm font-medium border-b border-white/10 hover:bg-[#1b493c] transition-colors">평면정보</a>
+      <a href="#contact" class="px-6 py-3 text-white/90 text-sm font-medium hover:bg-[#1b493c] transition-colors">관심고객등록</a>
+      <div class="px-6 pt-3">
+        <a href="tel:16665326" class="flex items-center justify-center gap-2 py-3 rounded text-white text-sm font-bold" style="background:#1b493c;">
+          1666-5326
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const header = document.getElementById('ep-header');
+
+  function updateHeader() {
+    if (!header) return;
+    if (window.scrollY > 50) {
+      header.style.background = '#13362d';
+      header.style.boxShadow = '0 2px 20px rgba(0,0,0,0.3)';
+    } else {
+      header.style.background = 'transparent';
+      header.style.boxShadow = 'none';
+    }
+  }
+
+  window.addEventListener('scroll', updateHeader);
+  updateHeader();
+
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  mobileMenuBtn?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+</script>
+
+<style>
+  #ep-header a[href^="tel"]:hover {
+    background-color: #154734 !important;
+  }
+</style>

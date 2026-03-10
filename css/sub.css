@@ -1,0 +1,448 @@
+/* ================================================================
+   SUB PAGE CSS — 동래 푸르지오 에듀포레
+   Official Prugio website style adaptation
+   ================================================================ */
+
+/* ── 서브 페이지 body 패딩 ── */
+body.sub-page {
+  padding-top: 0;
+}
+
+/* 헤더가 항상 배경색 표시되도록 서브 페이지에서 강제 적용 */
+body.sub-page .header {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+}
+
+body.sub-page .header-logo .logo-brand,
+body.sub-page .header-logo .logo-name {
+  color: #212121;
+}
+
+body.sub-page .header-nav ul > li > a {
+  color: #212121;
+}
+
+/* 현재 페이지 메뉴 강조 */
+body.sub-page .header-nav .active-menu > a {
+  color: #134139;
+  font-weight: 600;
+}
+
+body.sub-page .header-nav .sub-menu a.current-page {
+  color: #134139;
+  font-weight: 600;
+}
+
+
+/* ================================================================
+   SUB TITLE BOX (히어로 영역)
+   ================================================================ */
+
+.sub-title-box {
+  position: relative;
+  height: 347px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 배경 이미지 레이어 (스케일 애니메이션) */
+.sub-title-bg {
+  position: absolute;
+  inset: 0;
+  background-color: #0a2418;
+  background-size: cover;
+  background-position: center;
+  animation: subBgScale 6s ease forwards;
+}
+
+@keyframes subBgScale {
+  from { transform: scale(1.08); }
+  to   { transform: scale(1.0); }
+}
+
+/* 어두운 오버레이 */
+.sub-title-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(5,20,15,0.55) 0%, rgba(5,20,15,0.45) 100%);
+}
+
+/* 평면안내 페이지 배경 */
+.unit-bg {
+  background-image: url('../images/hero-bg.jpg');
+  background-position: center 40%;
+}
+
+/* 배경 이미지가 없을 때 폴백 그라디언트 */
+.unit-bg[style*="onerror"],
+.unit-bg:not([style]) {
+  background: linear-gradient(135deg, #0d3028 0%, #134139 50%, #1a5247 100%);
+}
+
+/* 텍스트 컨테이너 (슬라이드인 애니메이션) */
+.sub-title-inner {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  animation: subTitleSlide 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s both;
+}
+
+@keyframes subTitleSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 영문 소제목 */
+.sub-title-en {
+  font-family: 'Rajdhani', 'Cormorant Garamond', serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.5em;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* 한글 제목 */
+.sub-title-kr {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  margin: 0;
+  line-height: 1.2;
+}
+
+
+/* ================================================================
+   BREADCRUMB
+   ================================================================ */
+
+.sub-breadcrumb {
+  background: #f7f7f5;
+  border-bottom: 1px solid #e8e6e2;
+}
+
+.sub-breadcrumb-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 80px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sub-home {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.sub-home:hover {
+  color: #134139;
+}
+
+.sub-home svg {
+  flex-shrink: 0;
+  margin-bottom: 1px;
+}
+
+.sub-arrow {
+  font-size: 14px;
+  color: #bbb;
+  line-height: 1;
+}
+
+.sub-bc-item {
+  font-size: 12px;
+  color: #888;
+}
+
+.sub-bc-item.current {
+  color: #134139;
+  font-weight: 500;
+}
+
+
+/* ================================================================
+   SUB CONTENT WRAPPER
+   ================================================================ */
+
+.sub-content {
+  background: #fff;
+  padding: 60px 0 100px;
+}
+
+.sub-content-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+
+/* ================================================================
+   UNIT TABS (공식 홈페이지 tab.css 스타일)
+   ================================================================ */
+
+.unit-tabs {
+  list-style: none;
+  margin: 0 0 0 0;
+  padding: 0;
+  display: flex;
+  border-top: 2px solid #134139;
+  border-bottom: 2px solid #134139;
+}
+
+.unit-tabs li {
+  flex: 1;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 2px;
+  padding: 18px 10px;
+  cursor: pointer;
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #444;
+  border-right: 1px solid #ddd;
+  transition: background 0.2s, color 0.2s;
+  position: relative;
+}
+
+.unit-tabs li:last-child {
+  border-right: none;
+}
+
+.unit-tabs li:hover {
+  background: #f0f4f3;
+  color: #134139;
+}
+
+.unit-tabs li.current {
+  background: #134139;
+  color: #fff;
+}
+
+.utab-size {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.utab-unit {
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 3px;
+}
+
+.utab-type {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* 탭 패널 */
+.unit-tab-area {
+  display: none;
+  animation: tabFadeIn 0.4s ease;
+}
+
+.unit-tab-area.current {
+  display: block;
+}
+
+@keyframes tabFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* 평면도 이미지 */
+.unit-plan-img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 50px 0 40px;
+}
+
+
+/* ================================================================
+   UNIT PAGE INFO (유의사항)
+   ================================================================ */
+
+.unit-page-info {
+  list-style: none;
+  margin: 0;
+  padding: 24px 30px;
+  background: #f7f7f5;
+  border: 1px solid #e8e6e2;
+  border-radius: 2px;
+}
+
+.unit-page-info li {
+  font-size: 12px;
+  color: #888;
+  line-height: 1.8;
+  padding-left: 14px;
+  position: relative;
+}
+
+.unit-page-info li::before {
+  content: '※';
+  position: absolute;
+  left: 0;
+  color: #aaa;
+  font-size: 11px;
+}
+
+
+/* ================================================================
+   RESPONSIVE — 1024px
+   ================================================================ */
+
+@media (max-width: 1024px) {
+  .sub-title-box {
+    height: 260px;
+  }
+
+  .sub-title-kr {
+    font-size: 28px;
+  }
+
+  .sub-breadcrumb-inner {
+    padding: 0 40px;
+  }
+
+  .sub-content-inner {
+    padding: 0 40px;
+  }
+
+  .utab-size {
+    font-size: 22px;
+  }
+
+  .utab-unit {
+    font-size: 12px;
+  }
+
+  .utab-type {
+    font-size: 13px;
+  }
+
+  .unit-tabs li {
+    padding: 14px 8px;
+  }
+}
+
+
+/* ================================================================
+   RESPONSIVE — 768px
+   ================================================================ */
+
+@media (max-width: 768px) {
+  .sub-title-box {
+    height: 200px;
+  }
+
+  .sub-title-en {
+    font-size: 11px;
+    letter-spacing: 0.35em;
+  }
+
+  .sub-title-kr {
+    font-size: 22px;
+  }
+
+  .sub-breadcrumb-inner {
+    padding: 0 20px;
+    height: 40px;
+  }
+
+  .sub-content {
+    padding: 40px 0 70px;
+  }
+
+  .sub-content-inner {
+    padding: 0 20px;
+  }
+
+  .unit-tabs {
+    flex-wrap: wrap;
+    border-top: 2px solid #134139;
+    border-bottom: 2px solid #134139;
+  }
+
+  .unit-tabs li {
+    flex: 0 0 50%;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 12px 8px;
+  }
+
+  .unit-tabs li:nth-child(2n) {
+    border-right: none;
+  }
+
+  .unit-tabs li:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+
+  .utab-size {
+    font-size: 20px;
+  }
+
+  .unit-plan-img {
+    padding: 30px 0 24px;
+  }
+
+  .unit-page-info {
+    padding: 16px 18px;
+  }
+}
+
+
+/* ================================================================
+   RESPONSIVE — 480px
+   ================================================================ */
+
+@media (max-width: 480px) {
+  .sub-title-box {
+    height: 160px;
+  }
+
+  .sub-title-kr {
+    font-size: 20px;
+  }
+
+  .unit-tabs li {
+    flex: 0 0 50%;
+  }
+
+  .utab-size {
+    font-size: 18px;
+  }
+
+  .utab-type {
+    font-size: 12px;
+  }
+
+  .unit-page-info li {
+    font-size: 11px;
+  }
+}

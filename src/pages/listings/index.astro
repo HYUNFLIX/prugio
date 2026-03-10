@@ -1,0 +1,176 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const listings = [
+  {
+    slug: '59a',
+    type: '59A',
+    area: '59.98㎡',
+    supply: '79.56㎡',
+    rooms: '방3 욕실2',
+    floors: '3~29층',
+    count: '234세대',
+    price: '5억 5,000만원~',
+    priceNote: '(층별/향별 상이)',
+    tag: '인기',
+    tagColor: 'bg-red-100 text-red-600',
+    features: ['남향 위주 배치', '펜트리·드레스룸', '3Bay 구조'],
+  },
+  {
+    slug: '74b',
+    type: '74B',
+    area: '74.44㎡',
+    supply: '98.23㎡',
+    rooms: '방3 욕실2',
+    floors: '3~29층',
+    count: '180세대',
+    price: '7억 0,000만원~',
+    priceNote: '(층별/향별 상이)',
+    tag: '',
+    features: ['알파룸 제공', '넓은 드레스룸', '4Bay 구조'],
+  },
+  {
+    slug: '84c',
+    type: '84C',
+    area: '84.97㎡',
+    supply: '112.81㎡',
+    rooms: '방3 욕실2',
+    floors: '3~29층',
+    count: '312세대',
+    price: '8억 5,000만원~',
+    priceNote: '(층별/향별 상이)',
+    tag: '대표',
+    tagColor: 'bg-navy-100 text-navy-700',
+    features: ['특화 주방 설계', '독립 드레스룸2', '팬트리 확대'],
+  },
+  {
+    slug: '99a',
+    type: '99A',
+    area: '99.23㎡',
+    supply: '130.77㎡',
+    rooms: '방4 욕실2',
+    floors: '10~29층',
+    count: '96세대',
+    price: '11억 0,000만원~',
+    priceNote: '(층별/향별 상이)',
+    tag: '프리미엄',
+    tagColor: 'bg-gold-400/20 text-gold-600',
+    features: ['4베이 구조', '복도형 드레스룸', '넓은 서재방'],
+  },
+];
+---
+
+<Layout title="분양정보" description="동래 푸르지오 에듀포레 분양 평형 정보">
+  <Header />
+
+  <!-- 페이지 헤더 -->
+  <div class="bg-navy-950 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-gold-400 text-sm font-semibold tracking-widest uppercase mb-3">Listings</p>
+      <h1 class="text-4xl font-black mb-3">분양 정보</h1>
+      <p class="text-gray-400">동래 푸르지오 에듀포레의 다양한 평형을 확인하세요</p>
+    </div>
+  </div>
+
+  <!-- 요약 배너 -->
+  <div class="bg-navy-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+        <div>
+          <p class="text-gray-400 text-xs mb-1">총 세대수</p>
+          <p class="text-white font-black text-xl">822세대</p>
+        </div>
+        <div>
+          <p class="text-gray-400 text-xs mb-1">분양가 (시작)</p>
+          <p class="text-gold-400 font-black text-xl">5.5억~</p>
+        </div>
+        <div>
+          <p class="text-gray-400 text-xs mb-1">입주 예정</p>
+          <p class="text-white font-black text-xl">2027년 12월</p>
+        </div>
+        <div>
+          <p class="text-gray-400 text-xs mb-1">층수</p>
+          <p class="text-white font-black text-xl">최고 29층</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 목록 -->
+  <section class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid sm:grid-cols-2 xl:grid-cols-2 gap-8">
+        {listings.map(l => (
+          <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-xl transition-all group">
+            <!-- 헤더 -->
+            <div class="bg-navy-900 text-white p-6 flex items-start justify-between">
+              <div>
+                <p class="text-gray-400 text-xs mb-1">타입</p>
+                <p class="text-3xl font-black">{l.type}</p>
+                <p class="text-navy-300 text-sm mt-1">전용 {l.area} · 공급 {l.supply}</p>
+              </div>
+              <div class="text-right">
+                {l.tag && (
+                  <span class={`text-xs font-bold px-2.5 py-1.5 rounded-full ${l.tagColor || 'bg-gold-400/20 text-gold-400'}`}>
+                    {l.tag}
+                  </span>
+                )}
+                <p class="text-gray-400 text-xs mt-3">{l.count}</p>
+              </div>
+            </div>
+
+            <!-- 내용 -->
+            <div class="p-6">
+              <div class="grid grid-cols-2 gap-4 mb-5">
+                <div>
+                  <p class="text-gray-400 text-xs mb-1">구조</p>
+                  <p class="font-semibold text-gray-800">{l.rooms}</p>
+                </div>
+                <div>
+                  <p class="text-gray-400 text-xs mb-1">층수</p>
+                  <p class="font-semibold text-gray-800">{l.floors}</p>
+                </div>
+              </div>
+
+              <div class="mb-5">
+                <p class="text-gray-400 text-xs mb-2">특징</p>
+                <div class="flex flex-wrap gap-2">
+                  {l.features.map(f => (
+                    <span class="bg-navy-50 text-navy-700 text-xs font-medium px-3 py-1 rounded-full border border-navy-100">
+                      {f}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-gray-100 flex items-end justify-between">
+                <div>
+                  <p class="text-gray-400 text-xs mb-1">분양가 (시작)</p>
+                  <p class="text-navy-800 text-xl font-black">{l.price}</p>
+                  <p class="text-gray-400 text-xs mt-0.5">{l.priceNote}</p>
+                </div>
+                <a
+                  href={`/listings/${l.slug}`}
+                  class="bg-navy-900 hover:bg-navy-700 text-white font-semibold text-sm px-5 py-2.5 rounded-lg transition-colors"
+                >
+                  상세 보기
+                </a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- 법적 고지 -->
+      <div class="mt-10 bg-gray-100 rounded-xl p-6 text-xs text-gray-500 leading-relaxed">
+        <p class="font-semibold text-gray-700 mb-2">⚠️ 안내 사항</p>
+        <p>본 분양가는 기준 층 기준이며, 층별·향별에 따라 달라질 수 있습니다. 면적은 분양(공급)면적 기준이며, 향후 변경될 수 있습니다.
+        홈페이지의 이미지 및 내용은 이해를 돕기 위한 것으로 실제와 다를 수 있으며, 공식 분양 계약서 및 입주자 모집 공고를 반드시 확인하시기 바랍니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
