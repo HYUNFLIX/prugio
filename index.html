@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,774 +8,835 @@
   <meta name="description" content="부산 동래구 안락동 1481세대 랜드마크 분양. 동래 푸르지오 에듀포레 공식 분양 홈페이지. 문의: 1666-5326">
 
   <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- AOS CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<!-- ===== HEADER ===== -->
-<header class="header" id="header">
-  <div class="header-inner">
-    <a href="#" class="header-logo">
-      <img src="images/logo.png" alt="동래 푸르지오 에듀포레" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-      <div class="logo-text-wrap">
-        <span class="logo-brand">PRUGIO</span>
-        <span class="logo-name">동래 푸르지오 에듀포레</span>
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="header-logo">
+        <img src="images/logo.png" alt="동래 푸르지오 에듀포레" class="logo-img"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="logo-text-wrap">
+          <span class="logo-brand">PRUGIO</span>
+          <span class="logo-name">동래 푸르지오 에듀포레</span>
+        </div>
+      </a>
+      <nav class="header-nav">
+        <ul>
+          <li class="has-sub">
+            <a href="#overview">단지안내</a>
+            <ul class="sub-menu">
+              <li><a href="#overview">분양개요</a></li>
+              <li><a href="#siteplan">단지배치도</a></li>
+              <li><a href="#siteplan">동호배치도</a></li>
+              <li><a href="#green">커뮤니티</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="unit.html">세대안내</a>
+            <ul class="sub-menu">
+              <li><a href="unit.html">평면안내</a></li>
+              <li><a href="#interior">인테리어</a></li>
+              <li><a href="#system">시스템</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="#land">입지환경</a>
+            <ul class="sub-menu">
+              <li><a href="#land">주변환경</a></li>
+              <li><a href="#land">교통</a></li>
+              <li><a href="#overview">생활인프라</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="#premium">프리미엄</a>
+            <ul class="sub-menu">
+              <li><a href="#premium">학세권</a></li>
+              <li><a href="#premium">교통</a></li>
+              <li><a href="#premium">자연환경</a></li>
+              <li><a href="#premium">생활인프라</a></li>
+            </ul>
+          </li>
+          <li class="has-sub">
+            <a href="#overview">분양정보</a>
+            <ul class="sub-menu">
+              <li><a href="#overview">분양일정</a></li>
+              <li><a href="#overview">청약안내</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-right">
+        <a href="tel:16665326" class="header-tel hover_ani" data-color="#015152" data-line="2px">
+          <span class="tel-label">분양문의</span>
+          <span class="tel-num">1666-5326</span>
+        </a>
+        <button class="hamburger" aria-label="메뉴 열기">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </a>
-    <nav class="header-nav">
+    </div>
+  </header>
+
+  <!-- Hamburger Navigation (Mobile) -->
+  <div class="hamburger-nav">
+    <div class="hamburger-dim"></div>
+    <div class="hamburger-inner">
+      <button class="hamburger-close" aria-label="메뉴 닫기">✕</button>
       <ul>
-        <li class="has-sub">
+        <li>
           <a href="#overview">단지안내</a>
-          <ul class="sub-menu">
+          <ul>
             <li><a href="#overview">분양개요</a></li>
             <li><a href="#siteplan">단지배치도</a></li>
-            <li><a href="#siteplan">동호배치도</a></li>
             <li><a href="#green">커뮤니티</a></li>
           </ul>
         </li>
-        <li class="has-sub">
+        <li>
           <a href="unit.html">세대안내</a>
-          <ul class="sub-menu">
+          <ul>
             <li><a href="unit.html">평면안내</a></li>
             <li><a href="#interior">인테리어</a></li>
             <li><a href="#system">시스템</a></li>
           </ul>
         </li>
-        <li class="has-sub">
+        <li>
           <a href="#land">입지환경</a>
-          <ul class="sub-menu">
+          <ul>
             <li><a href="#land">주변환경</a></li>
             <li><a href="#land">교통</a></li>
-            <li><a href="#overview">생활인프라</a></li>
+            <li><a href="#land">생활인프라</a></li>
           </ul>
         </li>
-        <li class="has-sub">
+        <li>
           <a href="#premium">프리미엄</a>
-          <ul class="sub-menu">
+          <ul>
             <li><a href="#premium">학세권</a></li>
             <li><a href="#premium">교통</a></li>
             <li><a href="#premium">자연환경</a></li>
             <li><a href="#premium">생활인프라</a></li>
           </ul>
         </li>
-        <li class="has-sub">
+        <li>
           <a href="#overview">분양정보</a>
-          <ul class="sub-menu">
+          <ul>
             <li><a href="#overview">분양일정</a></li>
             <li><a href="#overview">청약안내</a></li>
           </ul>
         </li>
       </ul>
-    </nav>
-    <div class="header-right">
-      <a href="tel:16665326" class="header-tel hover_ani" data-color="#015152" data-line="2px">
-        <span class="tel-label">분양문의</span>
-        <span class="tel-num">1666-5326</span>
-      </a>
-      <button class="hamburger" aria-label="메뉴 열기">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</header>
-
-<!-- Hamburger Navigation (Mobile) -->
-<div class="hamburger-nav">
-  <div class="hamburger-dim"></div>
-  <div class="hamburger-inner">
-    <button class="hamburger-close" aria-label="메뉴 닫기">✕</button>
-    <ul>
-      <li>
-        <a href="#overview">단지안내</a>
-        <ul>
-          <li><a href="#overview">분양개요</a></li>
-          <li><a href="#siteplan">단지배치도</a></li>
-          <li><a href="#green">커뮤니티</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="unit.html">세대안내</a>
-        <ul>
-          <li><a href="unit.html">평면안내</a></li>
-          <li><a href="#interior">인테리어</a></li>
-          <li><a href="#system">시스템</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#land">입지환경</a>
-        <ul>
-          <li><a href="#land">주변환경</a></li>
-          <li><a href="#land">교통</a></li>
-          <li><a href="#land">생활인프라</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#premium">프리미엄</a>
-        <ul>
-          <li><a href="#premium">학세권</a></li>
-          <li><a href="#premium">교통</a></li>
-          <li><a href="#premium">자연환경</a></li>
-          <li><a href="#premium">생활인프라</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#overview">분양정보</a>
-        <ul>
-          <li><a href="#overview">분양일정</a></li>
-          <li><a href="#overview">청약안내</a></li>
-        </ul>
-      </li>
-    </ul>
-    <a href="tel:16665326" class="ham-tel">
-      <span>분양문의</span>
-      <strong>1666-5326</strong>
-    </a>
-  </div>
-</div>
-
-<!-- Quick Menu -->
-<div class="quick-menu">
-  <a href="tel:16665326" class="quick-item">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.5 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012.41 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.56 7.69a16 16 0 006.22 6.22l1.05-1.05a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
-    <span>전화상담</span>
-  </a>
-  <a href="#" class="quick-item">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
-    <span>상담신청</span>
-  </a>
-  <a href="#" class="quick-item">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-    <span>모델하우스</span>
-  </a>
-  <a href="#" class="quick-item quick-top" id="scrollTopBtn">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="18 15 12 9 6 15"/></svg>
-    <span>TOP</span>
-  </a>
-</div>
-
-<!-- ===== SECTION 1: VISUAL HERO ===== -->
-<section class="section main-section-visual" id="visual">
-  <div class="visual-bg">
-    <img src="images/hero-bg.jpg" alt="동래 푸르지오 에듀포레">
-    <div class="visual-overlay"></div>
-  </div>
-
-  <!-- ▼ 파티클 캔버스 -->
-  <canvas class="visual-canvas" id="visualCanvas"></canvas>
-
-  <!-- ▼ 장식 요소: 코너 프레임 + 스캔라인 + 광선 -->
-  <div class="visual-deco" aria-hidden="true">
-    <div class="vd-corner vd-corner--tl"></div>
-    <div class="vd-corner vd-corner--br"></div>
-    <div class="vd-scan"></div>
-    <div class="vd-beam"></div>
-  </div>
-
-  <div class="visual-inner">
-    <div class="visual-content">
-      <p class="visual-sub">PRUGIO DONGRAE EDUFORET</p>
-      <h1 class="visual-title">
-        <p>마침내 시작될</p>
-        <p class="title-accent-line">변화의 중심</p>
-      </h1>
-      <div class="visual-line"></div>
-      <div class="visual-logo">
-        <span class="vl-brand">동래 푸르지오</span>
-        <span class="vl-name">에듀포레</span>
-      </div>
-    </div>
-    <div class="visual-info">
-      <div class="visual-info-item">
-        <strong>총 1,481세대</strong>
-        <span>일반분양 474세대</span>
-      </div>
-      <div class="visual-info-divider"></div>
-      <div class="visual-info-item">
-        <strong>74·76·84㎡</strong>
-        <span>전용면적</span>
-      </div>
-      <div class="visual-info-divider"></div>
-      <div class="visual-info-item">
-        <strong>부산 동래구</strong>
-        <span>안락동 1230번지 일원</span>
-      </div>
-    </div>
-  </div>
-  <div class="visual-scroll-indicator">
-    <span>SCROLL</span>
-    <div class="scroll-line"></div>
-  </div>
-</section>
-
-<!-- ===== SECTION 2: UNIT PLAN ===== -->
-<section class="section main-section-unit" id="unit">
-  <div class="unit-inner">
-
-    <!-- 헤더 -->
-    <div class="unit-header">
-      <p class="unit-eyebrow" data-aos="fade-up">PLAN</p>
-      <h2 class="unit-title" data-aos="fade-up" data-aos-delay="80">평면안내</h2>
-      <p class="unit-subtitle" data-aos="fade-up" data-aos-delay="140">74㎡부터 84㎡까지, 라이프스타일에 맞는 최적의 평면을 선택하세요.</p>
-    </div>
-
-    <!-- 주택형 카드 -->
-    <div class="unit-type-cards" data-aos="fade-up" data-aos-delay="200">
-
-      <a href="unit.html" class="unit-type-card">
-        <div class="utc-thumb">
-          <img src="images/unit-74a.png" alt="74㎡A 평면 썸네일" loading="lazy"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="utc-thumb-fallback">
-            <span class="utc-size-bg">74㎡</span>
-          </div>
-        </div>
-        <div class="utc-info">
-          <p class="utc-label">공급면적</p>
-          <p class="utc-size">74<span>㎡</span></p>
-          <p class="utc-type">TYPE <strong>A</strong></p>
-        </div>
-        <div class="utc-cta">
-          <span>평면 상세보기</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </div>
-      </a>
-
-      <a href="unit.html" class="unit-type-card">
-        <div class="utc-thumb">
-          <img src="images/unit-76a.png" alt="76㎡A 평면 썸네일" loading="lazy"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="utc-thumb-fallback">
-            <span class="utc-size-bg">76㎡</span>
-          </div>
-        </div>
-        <div class="utc-info">
-          <p class="utc-label">공급면적</p>
-          <p class="utc-size">76<span>㎡</span></p>
-          <p class="utc-type">TYPE <strong>A</strong></p>
-        </div>
-        <div class="utc-cta">
-          <span>평면 상세보기</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </div>
-      </a>
-
-      <a href="unit.html" class="unit-type-card">
-        <div class="utc-thumb">
-          <img src="images/unit-84a.png" alt="84㎡A 평면 썸네일" loading="lazy"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="utc-thumb-fallback">
-            <span class="utc-size-bg">84㎡</span>
-          </div>
-        </div>
-        <div class="utc-info">
-          <p class="utc-label">공급면적</p>
-          <p class="utc-size">84<span>㎡</span></p>
-          <p class="utc-type">TYPE <strong>A</strong></p>
-        </div>
-        <div class="utc-cta">
-          <span>평면 상세보기</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </div>
-      </a>
-
-      <a href="unit.html" class="unit-type-card">
-        <div class="utc-thumb">
-          <img src="images/unit-84a1.png" alt="84㎡A1 평면 썸네일" loading="lazy"
-               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-          <div class="utc-thumb-fallback">
-            <span class="utc-size-bg">84㎡</span>
-          </div>
-        </div>
-        <div class="utc-info">
-          <p class="utc-label">공급면적</p>
-          <p class="utc-size">84<span>㎡</span></p>
-          <p class="utc-type">TYPE <strong>A1</strong></p>
-        </div>
-        <div class="utc-cta">
-          <span>평면 상세보기</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        </div>
-      </a>
-
-    </div>
-
-    <!-- 전체 보기 버튼 -->
-    <div class="unit-more-wrap" data-aos="fade-up" data-aos-delay="280">
-      <a href="unit.html" class="unit-more-btn">
-        전체 평면 상세보기
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-      </a>
-    </div>
-
-  </div>
-</section>
-
-<!-- ===== SECTION 3: LANDSCAPE / 입지 ===== -->
-<section class="section main-section-land" id="land">
-  <div class="swiper land-slide">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide land-slide-01">
-        <div class="land-bg">
-          <img src="images/landscape.jpg" alt="온천천·명장공원">
-          <div class="land-overlay"></div>
-        </div>
-        <div class="land-content">
-          <div class="land-tag">NATURE</div>
-          <h2 class="land-title">자연을 곁에 둔<br><b>웰빙라이프</b></h2>
-          <p class="land-desc">
-            온천천과 수영강 시민공원, 명장공원 인접<br>
-            일상 속 스며드는 산책, 레저, 휴식
-          </p>
-        </div>
-      </div>
-      <div class="swiper-slide land-slide-02">
-        <div class="land-bg">
-          <img src="images/landscape2.jpg" alt="교육환경">
-          <div class="land-overlay"></div>
-        </div>
-        <div class="land-content">
-          <div class="land-tag">EDUCATION</div>
-          <h2 class="land-title">걸어서 누리는<br><b>안심 학세권</b></h2>
-          <p class="land-desc">
-            바로 앞 충렬초·중·고는 물론<br>
-            혜화초·여중·고 등 도보권 교육시설
-          </p>
-        </div>
-      </div>
-      <div class="swiper-slide land-slide-03">
-        <div class="land-bg">
-          <img src="images/community-img.jpg" alt="교통 인프라">
-          <div class="land-overlay"></div>
-        </div>
-        <div class="land-content">
-          <div class="land-tag">TRAFFIC</div>
-          <h2 class="land-title">어디든 빠르게<br><b>쾌속 교통망</b></h2>
-          <p class="land-desc">
-            원동 IC, 동해남부선을 통해<br>
-            도심내외로 이동이 빠른 광역 교통망
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="land-navigation">
-      <div class="land-prev">
-        <svg width="20" height="14" viewBox="0 0 24 14" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="24" y1="7" x2="2" y2="7"/><polyline points="9 1 2 7 9 13"/></svg>
-        PREV
-      </div>
-      <div class="land-pagination swiper-pagination"></div>
-      <div class="land-next">
-        NEXT
-        <svg width="20" height="14" viewBox="0 0 24 14" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="0" y1="7" x2="22" y2="7"/><polyline points="15 1 22 7 15 13"/></svg>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== SECTION 4: GREEN LOUNGE / 커뮤니티 ===== -->
-<section class="section main-section-green" id="green">
-  <div class="green-header">
-    <div class="green-header-inner">
-      <p class="green-label">Community</p>
-      <h2 class="green-title">GREENERY<br>LOUNGE</h2>
-      <p class="green-desc">
-        라이프스타일을 바꾸는 고품격 커뮤니티,<br>
-        <b>모든 순간이 특별해집니다.</b>
-      </p>
-    </div>
-  </div>
-
-  <div class="swiper green-slide">
-    <div class="swiper-wrapper">
-      <!-- Slide 1: 피트니스 / 스포츠 -->
-      <div class="swiper-slide">
-        <div class="green-slide-inner">
-          <div class="green-left">
-            <div class="green-slide-num">01</div>
-            <h3 class="green-slide-title">스포츠&amp;피트니스</h3>
-            <ul class="green-ul">
-              <li style="--i:1"><b>피트니스센터</b>최신 운동기구를 갖춘 프리미엄 헬스케어 공간</li>
-              <li style="--i:2"><b>골프연습장</b>실내 스크린 골프와 연습 공간이 결합된 특별한 여가 공간</li>
-              <li style="--i:3"><b>GX룸</b>요가, 필라테스, 에어로빅 등 다양한 그룹 수업 공간</li>
-              <li style="--i:4"><b>수영장</b>사계절 이용 가능한 실내 수영장</li>
-            </ul>
-          </div>
-          <div class="green-right">
-            <img src="images/lounge1.png" alt="스포츠 커뮤니티" class="green-main-img">
-          </div>
-        </div>
-      </div>
-      <!-- Slide 2: 키즈 / 교육 -->
-      <div class="swiper-slide">
-        <div class="green-slide-inner">
-          <div class="green-left">
-            <div class="green-slide-num">02</div>
-            <h3 class="green-slide-title">키즈&amp;교육</h3>
-            <ul class="green-ul">
-              <li style="--i:1"><b>키즈카페</b>아이들이 함께 어울려 안전하게 놀 수 있는 놀이 공간</li>
-              <li style="--i:2"><b>키즈도서관</b>독서를 통해 창의력과 지혜를 키우는 어린이 전용 학습 공간</li>
-              <li style="--i:3"><b>독서실</b>조용한 면학 분위기에서 공부와 독서에 집중할 수 있는 공간</li>
-              <li style="--i:4"><b>다함께돌봄센터</b>초등학생 자녀들의 방과 후 시간을 책임지는 돌봄 공간</li>
-            </ul>
-          </div>
-          <div class="green-right">
-            <img src="images/lounge2.jpg" alt="키즈·교육 커뮤니티" class="green-main-img">
-          </div>
-        </div>
-      </div>
-      <!-- Slide 3: 문화 / 라운지 -->
-      <div class="swiper-slide">
-        <div class="green-slide-inner">
-          <div class="green-left">
-            <div class="green-slide-num">03</div>
-            <h3 class="green-slide-title">문화&amp;라운지</h3>
-            <ul class="green-ul">
-              <li style="--i:1"><b>Greenery Café</b>여유로운 티타임과 함께 삶의 여유를 누릴 수 있는 공간</li>
-              <li style="--i:2"><b>멀티룸</b>회의 및 각종 소모임 등 다양하게 활용할 수 있는 다목적 공간</li>
-              <li style="--i:3"><b>작은도서관</b>편안하고 조용한 분위기에서 독서를 즐길 수 있는 문화 공간</li>
-              <li style="--i:4"><b>공유오피스</b>입주민들을 위한 프리미엄 학습 공간 및 업무 공간</li>
-            </ul>
-          </div>
-          <div class="green-right">
-            <img src="images/lounge3.png" alt="문화 커뮤니티" class="green-main-img">
-          </div>
-        </div>
-      </div>
-      <!-- Slide 4: 생활 편의 -->
-      <div class="swiper-slide">
-        <div class="green-slide-inner">
-          <div class="green-left">
-            <div class="green-slide-num">04</div>
-            <h3 class="green-slide-title">생활편의</h3>
-            <ul class="green-ul">
-              <li style="--i:1"><b>코인세탁실</b>세탁부터 건조까지 생활의 편리함을 높여주는 편의 공간</li>
-              <li style="--i:2"><b>주민회의실</b>입주민들이 함께 모여 회의 및 교류할 수 있는 열린 공간</li>
-              <li style="--i:3"><b>택배보관함</b>안전하고 편리한 스마트 택배 수령 시스템</li>
-              <li style="--i:4"><b>전기차충전소</b>지하주차장 내 설치된 전기차 충전 인프라</li>
-            </ul>
-          </div>
-          <div class="green-right">
-            <img src="images/lounge4.png" alt="생활편의 커뮤니티" class="green-main-img">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="green-control">
-    <div class="green-navigation">
-      <div class="green-prev">PREV <svg width="16" height="10" viewBox="0 0 24 14" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="24" y1="7" x2="2" y2="7"/><polyline points="9 1 2 7 9 13"/></svg></div>
-      <div class="green-counter"><span class="green-current">01</span> / <span class="green-total">04</span></div>
-      <div class="green-next"><svg width="16" height="10" viewBox="0 0 24 14" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="0" y1="7" x2="22" y2="7"/><polyline points="15 1 22 7 15 13"/></svg> NEXT</div>
-    </div>
-  </div>
-
-  <!-- Gallery Grid -->
-  <div class="green-gallery">
-    <div class="green-gallery-item">
-      <img src="images/iso1.jpg" alt="커뮤니티 시설">
-    </div>
-    <div class="green-gallery-item">
-      <img src="images/iso2.jpg" alt="커뮤니티 시설">
-    </div>
-    <div class="green-gallery-item">
-      <img src="images/iso3.jpg" alt="커뮤니티 시설">
-    </div>
-    <div class="green-gallery-item">
-      <img src="images/iso4.jpg" alt="커뮤니티 시설">
-    </div>
-    <div class="green-gallery-item">
-      <img src="images/iso5.jpg" alt="커뮤니티 시설">
-    </div>
-  </div>
-</section>
-
-<!-- ===== SECTION 5: PREMIUM ===== -->
-<section class="section main-section-premium" id="premium">
-  <div class="premium-bg-wrap">
-    <div class="premium-bg-item active" style="background-image:url(images/premium-bg1.jpg)"></div>
-    <div class="premium-bg-item" style="background-image:url(images/premium-bg2.jpg)"></div>
-    <div class="premium-bg-item" style="background-image:url(images/premium-bg3.jpg)"></div>
-    <div class="premium-bg-item" style="background-image:url(images/premium-bg4.jpg)"></div>
-    <div class="premium-overlay"></div>
-  </div>
-
-  <div class="premium-inner">
-    <div class="premium-title-area">
-      <p class="premium-eyebrow">PREMIUM</p>
-      <h2 class="premium-main-title">
-        마침내 시작될 변화<br>
-        더 커질 비전과 미래가치
-      </h2>
-    </div>
-
-    <div class="premium-cards">
-      <div class="premium-card active" data-index="0">
-        <div class="premium-card-icon">
-          <img src="images/premium-icon1.jpg" alt="교육">
-        </div>
-        <div class="premium-card-body">
-          <span class="premium-tag">EDUCATION</span>
-          <h3 class="premium-card-title">걸어서 누리는<br>안심 학세권</h3>
-          <p class="premium-card-desc">
-            바로 앞 충렬초·중·고는 물론<br>
-            혜화초·여중·고 등 도보권 교육시설
-          </p>
-        </div>
-      </div>
-      <div class="premium-card" data-index="1">
-        <div class="premium-card-icon">
-          <img src="images/premium-icon2.jpg" alt="교통">
-        </div>
-        <div class="premium-card-body">
-          <span class="premium-tag">TRAFFIC</span>
-          <h3 class="premium-card-title">어디든 빠르게<br>쾌속 교통</h3>
-          <p class="premium-card-desc">
-            원동 IC, 동해남부선을 통해<br>
-            도심내외로 이동이 빠른 광역 교통망
-          </p>
-        </div>
-      </div>
-      <div class="premium-card" data-index="2">
-        <div class="premium-card-icon">
-          <img src="images/premium-icon3.jpg" alt="자연">
-        </div>
-        <div class="premium-card-body">
-          <span class="premium-tag">NATURE</span>
-          <h3 class="premium-card-title">자연을 곁에 둔<br>웰빙라이프</h3>
-          <p class="premium-card-desc">
-            온천천과 수영강 시민공원, 명장공원 인접<br>
-            일상 속 스며드는 산책, 레저, 휴식
-          </p>
-        </div>
-      </div>
-      <div class="premium-card" data-index="3">
-        <div class="premium-card-icon">
-          <img src="images/premium-icon4.jpg" alt="생활">
-        </div>
-        <div class="premium-card-body">
-          <span class="premium-tag">CONVENIENCE</span>
-          <h3 class="premium-card-title">일상이 여유로운<br>생활 인프라</h3>
-          <p class="premium-card-desc">
-            서원시장, 이마트 트레이더스, 코스트코 및<br>
-            동래봉생병원, 대동병원 등 의료시설
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== SECTION 6: OVERVIEW ===== -->
-<section class="section main-section-overview" id="overview">
-  <div class="overview-bg">
-    <img src="images/location.jpg" alt="동래 푸르지오 에듀포레 위치도" class="overview-map-img">
-    <a href="#" class="overview-big-btn hover_ani" data-color="rgba(255,255,255,0.5)" data-line="1px">
-      지역도<br>크게보기<span class="overview-big-plus">+</span>
-    </a>
-  </div>
-  <div class="overview-content">
-    <div class="overview-title-wrap">
-      <p class="overview-eyebrow">LOCATION</p>
-      <h2 class="overview-title">OVERVIEW</h2>
-    </div>
-    <ul class="overview-list">
-      <li data-aos="fade-left" data-aos-delay="0">
-        <div class="overview-name">대지위치</div>
-        <div class="overview-line-bar"></div>
-        <div class="overview-desc">부산광역시 동래구 안락동 1230번지 일원</div>
-      </li>
-      <li data-aos="fade-left" data-aos-delay="100">
-        <div class="overview-name">세대수</div>
-        <div class="overview-line-bar"></div>
-        <div class="overview-desc">총 1,481세대 <em>[일반분양 474세대]</em></div>
-      </li>
-      <li data-aos="fade-left" data-aos-delay="200">
-        <div class="overview-name">주택형 <small>(일반분양)</small></div>
-        <div class="overview-line-bar"></div>
-        <div class="overview-desc">74㎡ · 76㎡ · 84㎡</div>
-      </li>
-      <li data-aos="fade-left" data-aos-delay="300">
-        <div class="overview-name">시공사</div>
-        <div class="overview-line-bar"></div>
-        <div class="overview-desc">㈜ 대우건설</div>
-      </li>
-      <li data-aos="fade-left" data-aos-delay="400">
-        <div class="overview-name">문의전화</div>
-        <div class="overview-line-bar"></div>
-        <div class="overview-desc"><a href="tel:16665326" class="overview-tel">1666-5326</a></div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<!-- ===== SECTION 7: BRAND / VISUAL2 ===== -->
-<section class="section main-section-visual2" id="brand">
-  <div class="visual2-inner">
-    <span class="visual2-tag">BRAND</span>
-    <h2 class="visual2-title">The Natural Nobility</h2>
-    <h3 class="visual2-sub">본연이 지니는 고귀함</h3>
-    <p class="visual2-desc">
-      견고한 기본에 더해진 세련된 편안함,<br>
-      내 삶의 본연을 집에서 찾다
-    </p>
-    <a href="tel:16665326" class="visual2-cta hover_ani" data-color="rgba(255,255,255,0.5)" data-line="1px">
-      <span>분양 문의하기</span>
-      <strong>1666-5326</strong>
-    </a>
-  </div>
-</section>
-
-<!-- ===== SECTION 8: 인테리어 ===== -->
-<section class="section main-section-interior" id="interior">
-  <div class="sub-section-inner">
-    <div class="sub-section-header" data-aos="fade-up">
-      <p class="sub-eyebrow">INTERIOR</p>
-      <h2 class="sub-title">인테리어</h2>
-    </div>
-    <!-- Tab Buttons -->
-    <div class="sub-tab-wrap" data-aos="fade-up" data-aos-delay="100">
-      <button class="sub-tab-btn on" data-target="interior-tab1">74A</button>
-      <button class="sub-tab-btn" data-target="interior-tab2">84A</button>
-    </div>
-    <!-- Tab Contents -->
-    <div class="sub-tab-content on" id="interior-tab1">
-      <div class="sub-fullimg-wrap">
-        <img src="images/interior-74a.jpg" alt="74A 인테리어" loading="lazy">
-      </div>
-    </div>
-    <div class="sub-tab-content" id="interior-tab2">
-      <div class="sub-fullimg-wrap">
-        <img src="images/interior-84a.jpg" alt="84A 인테리어" loading="lazy">
-      </div>
-    </div>
-    <p class="sub-disclaimer">※ 상기 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 다를 수 있습니다.</p>
-  </div>
-</section>
-
-<!-- ===== SECTION 9: 시스템 ===== -->
-<section class="section main-section-system" id="system">
-  <div class="sub-section-inner">
-    <div class="sub-section-header" data-aos="fade-up">
-      <p class="sub-eyebrow">SYSTEM</p>
-      <h2 class="sub-title">시스템</h2>
-    </div>
-    <!-- Tab Buttons -->
-    <div class="sub-tab-wrap" data-aos="fade-up" data-aos-delay="100">
-      <button class="sub-tab-btn on" data-target="system-tab1">빌트인 시스템</button>
-      <button class="sub-tab-btn" data-target="system-tab2">편의 시스템</button>
-      <button class="sub-tab-btn" data-target="system-tab3">수납 &amp; 스타일링</button>
-      <button class="sub-tab-btn" data-target="system-tab4">안전 시스템</button>
-    </div>
-    <!-- Tab Contents -->
-    <div class="sub-tab-content on" id="system-tab1">
-      <div class="sub-fullimg-wrap">
-        <img src="images/system-01.jpg" alt="빌트인 시스템" loading="lazy">
-      </div>
-    </div>
-    <div class="sub-tab-content" id="system-tab2">
-      <div class="sub-fullimg-wrap">
-        <img src="images/system-02.jpg" alt="편의 시스템" loading="lazy">
-      </div>
-    </div>
-    <div class="sub-tab-content" id="system-tab3">
-      <div class="sub-fullimg-wrap">
-        <img src="images/system-03.jpg" alt="수납 & 스타일링 시스템" loading="lazy">
-      </div>
-    </div>
-    <div class="sub-tab-content" id="system-tab4">
-      <div class="sub-fullimg-wrap">
-        <img src="images/system-04.jpg" alt="안전 시스템" loading="lazy">
-      </div>
-    </div>
-    <p class="sub-disclaimer">※ 상기 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 다를 수 있습니다. 유상옵션은 발코니 확장 시 선택 가능합니다.</p>
-  </div>
-</section>
-
-<!-- ===== SECTION 10: 단지배치도 + 동호배치도 ===== -->
-<section class="section main-section-siteplan" id="siteplan">
-  <div class="sub-section-inner">
-    <div class="sub-section-header" data-aos="fade-up">
-      <p class="sub-eyebrow">SITE PLAN</p>
-      <h2 class="sub-title">단지 배치</h2>
-    </div>
-    <!-- Tab Buttons -->
-    <div class="sub-tab-wrap" data-aos="fade-up" data-aos-delay="100">
-      <button class="sub-tab-btn on" data-target="siteplan-tab1">단지배치도</button>
-      <button class="sub-tab-btn" data-target="siteplan-tab2">동호배치도</button>
-    </div>
-    <!-- Tab Contents -->
-    <div class="sub-tab-content on" id="siteplan-tab1">
-      <div class="sub-fullimg-wrap">
-        <img src="images/place.jpg" alt="단지배치도" loading="lazy">
-      </div>
-    </div>
-    <div class="sub-tab-content" id="siteplan-tab2">
-      <div class="sub-fullimg-wrap">
-        <img src="images/architecture.jpg" alt="동호배치도" loading="lazy">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-top">
-      <div class="footer-logo-wrap">
-        <img src="images/logo.png" alt="동래 푸르지오 에듀포레" class="footer-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-        <div class="footer-logo-text" style="display:none;">
-          <span>PRUGIO</span>
-          <span>동래 푸르지오 에듀포레</span>
-        </div>
-      </div>
-      <div class="footer-info">
-        <ul class="footer-list">
-          <li>법인명 : ㈜ 대우건설</li>
-          <li>주소 : 서울특별시 중구 을지로 170</li>
-          <li>사업자등록번호 : 104-81-58180</li>
-        </ul>
-        <ul class="footer-notice">
-          <li>※ 본 홈페이지에 사용된 사진, 그래픽, 일러스트 및 내용 등은 소비자의 이해를 돕기 위한 것으로 실제와 다소 차이가 있을 수 있습니다.</li>
-          <li>※ 본 홈페이지는 제작, 편집, 인쇄과정상 오류가 있을 수 있으니, 중요사항 및 세부사항은 견본주택 관계자에게 문의하시기 바랍니다.</li>
-        </ul>
-        <a href="#" class="footer-privacy">개인정보처리방침</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="footer-builder">
-        <span class="fb-label">시행</span>
-        <span class="fb-name">안락1구역주택재건축정비사업조합</span>
-      </div>
-      <div class="footer-divider"></div>
-      <div class="footer-builder">
-        <span class="fb-label">시공</span>
-        <span class="fb-name">㈜대우건설</span>
-      </div>
-      <div class="footer-tel">
+      <a href="tel:16665326" class="ham-tel">
         <span>분양문의</span>
-        <a href="tel:16665326">1666-5326</a>
+        <strong>1666-5326</strong>
+      </a>
+    </div>
+  </div>
+
+  <!-- Quick Menu -->
+  <div class="quick-menu">
+    <a href="tel:16665326" class="quick-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path
+          d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.5 11.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012.41 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.56 7.69a16 16 0 006.22 6.22l1.05-1.05a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z" />
+      </svg>
+      <span>전화상담</span>
+    </a>
+    <a href="#" class="quick-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+      </svg>
+      <span>상담신청</span>
+    </a>
+    <a href="#" class="quick-item">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+        <polyline points="9 22 9 12 15 12 15 22" />
+      </svg>
+      <span>모델하우스</span>
+    </a>
+    <a href="#" class="quick-item quick-top" id="scrollTopBtn">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <polyline points="18 15 12 9 6 15" />
+      </svg>
+      <span>TOP</span>
+    </a>
+  </div>
+
+  <!-- ===== SECTION 1: VISUAL HERO ===== -->
+  <section class="section main-section-visual" id="visual">
+    <div class="visual-bg">
+      <img src="images/hero-bg.jpg" alt="동래 푸르지오 에듀포레">
+      <div class="visual-overlay"></div>
+    </div>
+
+    <!-- ▼ 파티클 캔버스 -->
+    <canvas class="visual-canvas" id="visualCanvas"></canvas>
+
+    <!-- ▼ 장식 요소: 코너 프레임 + 스캔라인 + 광선 -->
+    <div class="visual-deco" aria-hidden="true">
+      <div class="vd-corner vd-corner--tl"></div>
+      <div class="vd-corner vd-corner--br"></div>
+      <div class="vd-scan"></div>
+      <div class="vd-beam"></div>
+    </div>
+
+    <div class="visual-inner">
+      <div class="visual-content">
+        <p class="visual-sub">PRUGIO DONGRAE EDUFORET</p>
+        <h1 class="visual-title">
+          <p>마침내 시작될</p>
+          <p class="title-accent-line">변화의 중심</p>
+        </h1>
+        <div class="visual-line"></div>
+        <div class="visual-logo">
+          <span class="vl-brand">동래 푸르지오</span>
+          <span class="vl-name">에듀포레</span>
+        </div>
+      </div>
+      <div class="visual-info">
+        <div class="visual-info-item">
+          <strong>총 1,481세대</strong>
+          <span>일반분양 474세대</span>
+        </div>
+        <div class="visual-info-divider"></div>
+        <div class="visual-info-item">
+          <strong>74·76·84㎡</strong>
+          <span>전용면적</span>
+        </div>
+        <div class="visual-info-divider"></div>
+        <div class="visual-info-item">
+          <strong>부산 동래구</strong>
+          <span>안락동 1230번지 일원</span>
+        </div>
+      </div>
+    </div>
+    <div class="visual-scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 2: UNIT PLAN ===== -->
+  <section class="section main-section-unit" id="unit">
+    <div class="unit-inner">
+
+      <!-- 헤더 -->
+      <div class="unit-header">
+        <p class="unit-eyebrow" data-aos="fade-up">PLAN</p>
+        <h2 class="unit-title" data-aos="fade-up" data-aos-delay="80">평면안내</h2>
+        <p class="unit-subtitle" data-aos="fade-up" data-aos-delay="140">74㎡부터 84㎡까지, 라이프스타일에 맞는 최적의 평면을 선택하세요.</p>
+      </div>
+
+      <!-- 주택형 카드 -->
+      <div class="unit-type-cards" data-aos="fade-up" data-aos-delay="200">
+
+        <a href="unit.html" class="unit-type-card">
+          <div class="utc-thumb">
+            <img src="images/unit-74a.png" alt="74㎡A 평면 썸네일" loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="utc-thumb-fallback">
+              <span class="utc-size-bg">74㎡</span>
+            </div>
+          </div>
+          <div class="utc-info">
+            <p class="utc-label">공급면적</p>
+            <p class="utc-size">74<span>㎡</span></p>
+            <p class="utc-type">TYPE <strong>A</strong></p>
+          </div>
+          <div class="utc-cta">
+            <span>평면 상세보기</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </div>
+        </a>
+
+        <a href="unit.html" class="unit-type-card">
+          <div class="utc-thumb">
+            <img src="images/unit-76a.png" alt="76㎡A 평면 썸네일" loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="utc-thumb-fallback">
+              <span class="utc-size-bg">76㎡</span>
+            </div>
+          </div>
+          <div class="utc-info">
+            <p class="utc-label">공급면적</p>
+            <p class="utc-size">76<span>㎡</span></p>
+            <p class="utc-type">TYPE <strong>A</strong></p>
+          </div>
+          <div class="utc-cta">
+            <span>평면 상세보기</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </div>
+        </a>
+
+        <a href="unit.html" class="unit-type-card">
+          <div class="utc-thumb">
+            <img src="images/unit-84a.png" alt="84㎡A 평면 썸네일" loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="utc-thumb-fallback">
+              <span class="utc-size-bg">84㎡</span>
+            </div>
+          </div>
+          <div class="utc-info">
+            <p class="utc-label">공급면적</p>
+            <p class="utc-size">84<span>㎡</span></p>
+            <p class="utc-type">TYPE <strong>A</strong></p>
+          </div>
+          <div class="utc-cta">
+            <span>평면 상세보기</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </div>
+        </a>
+
+        <a href="unit.html" class="unit-type-card">
+          <div class="utc-thumb">
+            <img src="images/unit-84a1.png" alt="84㎡A1 평면 썸네일" loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="utc-thumb-fallback">
+              <span class="utc-size-bg">84㎡</span>
+            </div>
+          </div>
+          <div class="utc-info">
+            <p class="utc-label">공급면적</p>
+            <p class="utc-size">84<span>㎡</span></p>
+            <p class="utc-type">TYPE <strong>A1</strong></p>
+          </div>
+          <div class="utc-cta">
+            <span>평면 상세보기</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- 전체 보기 버튼 -->
+      <div class="unit-more-wrap" data-aos="fade-up" data-aos-delay="280">
+        <a href="unit.html" class="unit-more-btn">
+          전체 평면 상세보기
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== SECTION 3: LANDSCAPE / 입지 ===== -->
+  <section class="section main-section-land" id="land">
+    <div class="swiper land-slide">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide land-slide-01">
+          <div class="land-bg">
+            <img src="images/landscape.jpg" alt="온천천·명장공원">
+            <div class="land-overlay"></div>
+          </div>
+          <div class="land-content">
+            <div class="land-tag">NATURE</div>
+            <h2 class="land-title">자연을 곁에 둔<br><b>웰빙라이프</b></h2>
+            <p class="land-desc">
+              온천천과 수영강 시민공원, 명장공원 인접<br>
+              일상 속 스며드는 산책, 레저, 휴식
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide land-slide-02">
+          <div class="land-bg">
+            <img src="images/landscape2.jpg" alt="교육환경">
+            <div class="land-overlay"></div>
+          </div>
+          <div class="land-content">
+            <div class="land-tag">EDUCATION</div>
+            <h2 class="land-title">걸어서 누리는<br><b>안심 학세권</b></h2>
+            <p class="land-desc">
+              바로 앞 충렬초·중·고는 물론<br>
+              혜화초·여중·고 등 도보권 교육시설
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide land-slide-03">
+          <div class="land-bg">
+            <img src="images/community-img.jpg" alt="교통 인프라">
+            <div class="land-overlay"></div>
+          </div>
+          <div class="land-content">
+            <div class="land-tag">TRAFFIC</div>
+            <h2 class="land-title">어디든 빠르게<br><b>쾌속 교통망</b></h2>
+            <p class="land-desc">
+              원동 IC, 동해남부선을 통해<br>
+              도심내외로 이동이 빠른 광역 교통망
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="land-navigation">
+        <div class="land-prev">
+          <svg width="20" height="14" viewBox="0 0 24 14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <line x1="24" y1="7" x2="2" y2="7" />
+            <polyline points="9 1 2 7 9 13" />
+          </svg>
+          PREV
+        </div>
+        <div class="land-pagination swiper-pagination"></div>
+        <div class="land-next">
+          NEXT
+          <svg width="20" height="14" viewBox="0 0 24 14" fill="none" stroke="currentColor" stroke-width="1.5">
+            <line x1="0" y1="7" x2="22" y2="7" />
+            <polyline points="15 1 22 7 15 13" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 4: GREEN LOUNGE / 커뮤니티 ===== -->
+  <section class="section main-section-green" id="green">
+    <div class="green-header">
+      <div class="green-header-inner">
+        <p class="green-label">Community</p>
+        <h2 class="green-title">GREENERY<br>LOUNGE</h2>
+        <p class="green-desc">
+          라이프스타일을 바꾸는 고품격 커뮤니티,<br>
+          <b>모든 순간이 특별해집니다.</b>
+        </p>
+      </div>
+    </div>
+
+    <div class="swiper green-slide">
+      <div class="swiper-wrapper">
+        <!-- Slide 1: 피트니스 / 스포츠 -->
+        <div class="swiper-slide">
+          <div class="green-slide-inner">
+            <div class="green-left">
+              <div class="green-slide-num">01</div>
+              <h3 class="green-slide-title">스포츠&amp;피트니스</h3>
+              <ul class="green-ul">
+                <li style="--i:1"><b>피트니스센터</b>최신 운동기구를 갖춘 프리미엄 헬스케어 공간</li>
+                <li style="--i:2"><b>골프연습장</b>실내 스크린 골프와 연습 공간이 결합된 특별한 여가 공간</li>
+                <li style="--i:3"><b>GX룸</b>요가, 필라테스, 에어로빅 등 다양한 그룹 수업 공간</li>
+                <li style="--i:4"><b>수영장</b>사계절 이용 가능한 실내 수영장</li>
+              </ul>
+            </div>
+            <div class="green-right">
+              <img src="images/lounge1.png" alt="스포츠 커뮤니티" class="green-main-img">
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2: 키즈 / 교육 -->
+        <div class="swiper-slide">
+          <div class="green-slide-inner">
+            <div class="green-left">
+              <div class="green-slide-num">02</div>
+              <h3 class="green-slide-title">키즈&amp;교육</h3>
+              <ul class="green-ul">
+                <li style="--i:1"><b>키즈카페</b>아이들이 함께 어울려 안전하게 놀 수 있는 놀이 공간</li>
+                <li style="--i:2"><b>키즈도서관</b>독서를 통해 창의력과 지혜를 키우는 어린이 전용 학습 공간</li>
+                <li style="--i:3"><b>독서실</b>조용한 면학 분위기에서 공부와 독서에 집중할 수 있는 공간</li>
+                <li style="--i:4"><b>다함께돌봄센터</b>초등학생 자녀들의 방과 후 시간을 책임지는 돌봄 공간</li>
+              </ul>
+            </div>
+            <div class="green-right">
+              <img src="images/lounge2.jpg" alt="키즈·교육 커뮤니티" class="green-main-img">
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3: 문화 / 라운지 -->
+        <div class="swiper-slide">
+          <div class="green-slide-inner">
+            <div class="green-left">
+              <div class="green-slide-num">03</div>
+              <h3 class="green-slide-title">문화&amp;라운지</h3>
+              <ul class="green-ul">
+                <li style="--i:1"><b>Greenery Café</b>여유로운 티타임과 함께 삶의 여유를 누릴 수 있는 공간</li>
+                <li style="--i:2"><b>멀티룸</b>회의 및 각종 소모임 등 다양하게 활용할 수 있는 다목적 공간</li>
+                <li style="--i:3"><b>작은도서관</b>편안하고 조용한 분위기에서 독서를 즐길 수 있는 문화 공간</li>
+                <li style="--i:4"><b>공유오피스</b>입주민들을 위한 프리미엄 학습 공간 및 업무 공간</li>
+              </ul>
+            </div>
+            <div class="green-right">
+              <img src="images/lounge3.png" alt="문화 커뮤니티" class="green-main-img">
+            </div>
+          </div>
+        </div>
+        <!-- Slide 4: 생활 편의 -->
+        <div class="swiper-slide">
+          <div class="green-slide-inner">
+            <div class="green-left">
+              <div class="green-slide-num">04</div>
+              <h3 class="green-slide-title">생활편의</h3>
+              <ul class="green-ul">
+                <li style="--i:1"><b>코인세탁실</b>세탁부터 건조까지 생활의 편리함을 높여주는 편의 공간</li>
+                <li style="--i:2"><b>주민회의실</b>입주민들이 함께 모여 회의 및 교류할 수 있는 열린 공간</li>
+                <li style="--i:3"><b>택배보관함</b>안전하고 편리한 스마트 택배 수령 시스템</li>
+                <li style="--i:4"><b>전기차충전소</b>지하주차장 내 설치된 전기차 충전 인프라</li>
+              </ul>
+            </div>
+            <div class="green-right">
+              <img src="images/lounge4.png" alt="생활편의 커뮤니티" class="green-main-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="green-control">
+      <div class="green-navigation">
+        <div class="green-prev">PREV <svg width="16" height="10" viewBox="0 0 24 14" fill="none" stroke="currentColor"
+            stroke-width="1.5">
+            <line x1="24" y1="7" x2="2" y2="7" />
+            <polyline points="9 1 2 7 9 13" />
+          </svg></div>
+        <div class="green-counter"><span class="green-current">01</span> / <span class="green-total">04</span></div>
+        <div class="green-next"><svg width="16" height="10" viewBox="0 0 24 14" fill="none" stroke="currentColor"
+            stroke-width="1.5">
+            <line x1="0" y1="7" x2="22" y2="7" />
+            <polyline points="15 1 22 7 15 13" />
+          </svg> NEXT</div>
+      </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="green-gallery">
+      <div class="green-gallery-item">
+        <img src="images/iso1.jpg" alt="커뮤니티 시설">
+      </div>
+      <div class="green-gallery-item">
+        <img src="images/iso2.jpg" alt="커뮤니티 시설">
+      </div>
+      <div class="green-gallery-item">
+        <img src="images/iso3.jpg" alt="커뮤니티 시설">
+      </div>
+      <div class="green-gallery-item">
+        <img src="images/iso4.jpg" alt="커뮤니티 시설">
+      </div>
+      <div class="green-gallery-item">
+        <img src="images/iso5.jpg" alt="커뮤니티 시설">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 5: PREMIUM ===== -->
+  <section class="section main-section-premium" id="premium">
+    <div class="premium-bg-wrap">
+      <div class="premium-bg-item active" style="background-image:url(images/premium-bg1.jpg)"></div>
+      <div class="premium-bg-item" style="background-image:url(images/premium-bg2.jpg)"></div>
+      <div class="premium-bg-item" style="background-image:url(images/premium-bg3.jpg)"></div>
+      <div class="premium-bg-item" style="background-image:url(images/premium-bg4.jpg)"></div>
+      <div class="premium-overlay"></div>
+    </div>
+
+    <div class="premium-inner">
+      <div class="premium-title-area">
+        <p class="premium-eyebrow">PREMIUM</p>
+        <h2 class="premium-main-title">
+          마침내 시작될 변화<br>
+          더 커질 비전과 미래가치
+        </h2>
+      </div>
+
+      <div class="premium-cards">
+        <div class="premium-card active" data-index="0">
+          <div class="premium-card-icon">
+            <img src="images/premium-icon1.jpg" alt="교육">
+          </div>
+          <div class="premium-card-body">
+            <span class="premium-tag">EDUCATION</span>
+            <h3 class="premium-card-title">걸어서 누리는<br>안심 학세권</h3>
+            <p class="premium-card-desc">
+              바로 앞 충렬초·중·고는 물론<br>
+              혜화초·여중·고 등 도보권 교육시설
+            </p>
+          </div>
+        </div>
+        <div class="premium-card" data-index="1">
+          <div class="premium-card-icon">
+            <img src="images/premium-icon2.jpg" alt="교통">
+          </div>
+          <div class="premium-card-body">
+            <span class="premium-tag">TRAFFIC</span>
+            <h3 class="premium-card-title">어디든 빠르게<br>쾌속 교통</h3>
+            <p class="premium-card-desc">
+              원동 IC, 동해남부선을 통해<br>
+              도심내외로 이동이 빠른 광역 교통망
+            </p>
+          </div>
+        </div>
+        <div class="premium-card" data-index="2">
+          <div class="premium-card-icon">
+            <img src="images/premium-icon3.jpg" alt="자연">
+          </div>
+          <div class="premium-card-body">
+            <span class="premium-tag">NATURE</span>
+            <h3 class="premium-card-title">자연을 곁에 둔<br>웰빙라이프</h3>
+            <p class="premium-card-desc">
+              온천천과 수영강 시민공원, 명장공원 인접<br>
+              일상 속 스며드는 산책, 레저, 휴식
+            </p>
+          </div>
+        </div>
+        <div class="premium-card" data-index="3">
+          <div class="premium-card-icon">
+            <img src="images/premium-icon4.jpg" alt="생활">
+          </div>
+          <div class="premium-card-body">
+            <span class="premium-tag">CONVENIENCE</span>
+            <h3 class="premium-card-title">일상이 여유로운<br>생활 인프라</h3>
+            <p class="premium-card-desc">
+              서원시장, 이마트 트레이더스, 코스트코 및<br>
+              동래봉생병원, 대동병원 등 의료시설
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 6: OVERVIEW ===== -->
+  <section class="section main-section-overview" id="overview">
+    <div class="overview-bg">
+      <img src="images/location.jpg" alt="동래 푸르지오 에듀포레 위치도" class="overview-map-img">
+      <a href="#" class="overview-big-btn hover_ani" data-color="rgba(255,255,255,0.5)" data-line="1px">
+        지역도<br>크게보기<span class="overview-big-plus">+</span>
+      </a>
+    </div>
+    <div class="overview-content">
+      <div class="overview-title-wrap">
+        <p class="overview-eyebrow">LOCATION</p>
+        <h2 class="overview-title">OVERVIEW</h2>
+      </div>
+      <ul class="overview-list">
+        <li data-aos="fade-left" data-aos-delay="0">
+          <div class="overview-name">대지위치</div>
+          <div class="overview-line-bar"></div>
+          <div class="overview-desc">부산광역시 동래구 안락동 1230번지 일원</div>
+        </li>
+        <li data-aos="fade-left" data-aos-delay="100">
+          <div class="overview-name">세대수</div>
+          <div class="overview-line-bar"></div>
+          <div class="overview-desc">총 1,481세대 <em>[일반분양 474세대]</em></div>
+        </li>
+        <li data-aos="fade-left" data-aos-delay="200">
+          <div class="overview-name">주택형 <small>(일반분양)</small></div>
+          <div class="overview-line-bar"></div>
+          <div class="overview-desc">74㎡ · 76㎡ · 84㎡</div>
+        </li>
+        <li data-aos="fade-left" data-aos-delay="300">
+          <div class="overview-name">시공사</div>
+          <div class="overview-line-bar"></div>
+          <div class="overview-desc">㈜ 대우건설</div>
+        </li>
+        <li data-aos="fade-left" data-aos-delay="400">
+          <div class="overview-name">문의전화</div>
+          <div class="overview-line-bar"></div>
+          <div class="overview-desc"><a href="tel:16665326" class="overview-tel">1666-5326</a></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 7: BRAND / VISUAL2 ===== -->
+  <section class="section main-section-visual2" id="brand">
+    <div class="visual2-inner">
+      <span class="visual2-tag">BRAND</span>
+      <h2 class="visual2-title">The Natural Nobility</h2>
+      <h3 class="visual2-sub">본연이 지니는 고귀함</h3>
+      <p class="visual2-desc">
+        견고한 기본에 더해진 세련된 편안함,<br>
+        내 삶의 본연을 집에서 찾다
+      </p>
+      <a href="tel:16665326" class="visual2-cta hover_ani" data-color="rgba(255,255,255,0.5)" data-line="1px">
+        <span>분양 문의하기</span>
+        <strong>1666-5326</strong>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 8: 인테리어 ===== -->
+  <section class="section main-section-interior" id="interior">
+    <div class="sub-section-inner">
+      <div class="sub-section-header" data-aos="fade-up">
+        <p class="sub-eyebrow">INTERIOR</p>
+        <h2 class="sub-title">인테리어</h2>
+      </div>
+      <!-- Tab Buttons -->
+      <div class="sub-tab-wrap" data-aos="fade-up" data-aos-delay="100">
+        <button class="sub-tab-btn on" data-target="interior-tab1">74A</button>
+        <button class="sub-tab-btn" data-target="interior-tab2">84A</button>
+      </div>
+      <!-- Tab Contents -->
+      <div class="sub-tab-content on" id="interior-tab1">
+        <div class="sub-fullimg-wrap">
+          <img src="images/interior-74a.jpg" alt="74A 인테리어" loading="lazy">
+        </div>
+      </div>
+      <div class="sub-tab-content" id="interior-tab2">
+        <div class="sub-fullimg-wrap">
+          <img src="images/interior-84a.jpg" alt="84A 인테리어" loading="lazy">
+        </div>
+      </div>
+      <p class="sub-disclaimer">※ 상기 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 다를 수 있습니다.</p>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 9: 시스템 ===== -->
+  <section class="section main-section-system" id="system">
+    <div class="sub-section-inner">
+      <div class="sub-section-header" data-aos="fade-up">
+        <p class="sub-eyebrow">SYSTEM</p>
+        <h2 class="sub-title">시스템</h2>
+      </div>
+      <!-- Tab Buttons -->
+      <div class="sub-tab-wrap" data-aos="fade-up" data-aos-delay="100">
+        <button class="sub-tab-btn on" data-target="system-tab1">빌트인 시스템</button>
+        <button class="sub-tab-btn" data-target="system-tab2">편의 시스템</button>
+        <button class="sub-tab-btn" data-target="system-tab3">수납 &amp; 스타일링</button>
+        <button class="sub-tab-btn" data-target="system-tab4">안전 시스템</button>
+      </div>
+      <!-- Tab Contents -->
+      <div class="sub-tab-content on" id="system-tab1">
+        <div class="sub-fullimg-wrap">
+          <img src="images/system-01.jpg" alt="빌트인 시스템" loading="lazy">
+        </div>
+      </div>
+      <div class="sub-tab-content" id="system-tab2">
+        <div class="sub-fullimg-wrap">
+          <img src="images/system-02.jpg" alt="편의 시스템" loading="lazy">
+        </div>
+      </div>
+      <div class="sub-tab-content" id="system-tab3">
+        <div class="sub-fullimg-wrap">
+          <img src="images/system-03.jpg" alt="수납 & 스타일링 시스템" loading="lazy">
+        </div>
+      </div>
+      <div class="sub-tab-content" id="system-tab4">
+        <div class="sub-fullimg-wrap">
+          <img src="images/system-04.jpg" alt="안전 시스템" loading="lazy">
+        </div>
+      </div>
+      <p class="sub-disclaimer">※ 상기 이미지는 소비자의 이해를 돕기 위한 것으로 실제와 다를 수 있습니다. 유상옵션은 발코니 확장 시 선택 가능합니다.</p>
+    </div>
+  </section>
+
+  <!-- ===== SECTION 10: 단지배치도 + 동호배치도 ===== -->
+  <section class="section main-section-siteplan" id="siteplan">
+    <div class="sub-section-inner">
+      <div class="sub-section-header" data-aos="fade-up">
+        <p class="sub-eyebrow">SITE PLAN</p>
+        <h2 class="sub-title">단지 배치</h2>
+      </div>
+      <!-- Tab Buttons -->
+      <div class="sub-tab-wrap" data-aos="fade-up" data-aos-delay="100">
+        <button class="sub-tab-btn on" data-target="siteplan-tab1">단지배치도</button>
+        <button class="sub-tab-btn" data-target="siteplan-tab2">동호배치도</button>
+      </div>
+      <!-- Tab Contents -->
+      <div class="sub-tab-content on" id="siteplan-tab1">
+        <div class="sub-fullimg-wrap">
+          <img src="images/place.jpg" alt="단지배치도" loading="lazy">
+        </div>
+      </div>
+      <div class="sub-tab-content" id="siteplan-tab2">
+        <div class="sub-fullimg-wrap">
+          <img src="images/architecture.jpg" alt="동호배치도" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-logo-wrap">
+          <img src="images/logo.png" alt="동래 푸르지오 에듀포레" class="footer-logo"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="footer-logo-text" style="display:none;">
+            <span>PRUGIO</span>
+            <span>동래 푸르지오 에듀포레</span>
+          </div>
+        </div>
+        <div class="footer-info">
+          <ul class="footer-list">
+            <li>법인명 : ㈜ 대우건설</li>
+            <li>주소 : 서울특별시 중구 을지로 170</li>
+            <li>사업자등록번호 : 104-81-58180</li>
+          </ul>
+          <ul class="footer-notice">
+            <li>※ 본 홈페이지에 사용된 사진, 그래픽, 일러스트 및 내용 등은 소비자의 이해를 돕기 위한 것으로 실제와 다소 차이가 있을 수 있습니다.</li>
+            <li>※ 본 홈페이지는 제작, 편집, 인쇄과정상 오류가 있을 수 있으니, 중요사항 및 세부사항은 견본주택 관계자에게 문의하시기 바랍니다.</li>
+          </ul>
+          <a href="#" class="footer-privacy">개인정보처리방침</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-builder">
+          <span class="fb-label">시행</span>
+          <span class="fb-name">안락1구역주택재건축정비사업조합</span>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-builder">
+          <span class="fb-label">시공</span>
+          <span class="fb-name">㈜대우건설</span>
+        </div>
+        <div class="footer-tel">
+          <span>분양문의</span>
+          <a href="tel:16665326">1666-5326</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- Custom JS -->
+  <script src="js/main.js"></script>
+
+  <!-- ===== MAIN POPUP ===== -->
+  <div class="main-popup" id="mainPopup">
+    <div class="popup-inner">
+      <div class="popup-content">
+        <img src="images/main_popup_event.png" alt="동래 푸르지오 에듀포레 선착순 동호수지정 계약안내 (2026.03.14~03.15) 예약문의: 051-608-7111">
+      </div>
+      <div class="popup-footer">
+        <label class="popup-today-close">
+          <input type="checkbox" id="chkToday">
+          <span>오늘 하루 보지 않기</span>
+        </label>
+        <button class="popup-close-btn" aria-label="팝업 닫기">닫기 ✕</button>
       </div>
     </div>
   </div>
-</footer>
-
-<!-- ===== SCRIPTS ===== -->
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-
-<!-- AOS JS -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<!-- Custom JS -->
-<script src="js/main.js"></script>
 
 </body>
+
 </html>
